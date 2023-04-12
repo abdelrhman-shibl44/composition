@@ -1,0 +1,84 @@
+.header .container .logo {
+  float: right;
+}
+@media (min-width:992px) {
+  .header .container .logo {
+    float: right;
+    text-align: right;
+  }
+}
+.header .container .chLanguage {
+  position: absolute;
+  top: 70px;
+  left: 280px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #e2494c;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (max-width:767px) {
+  .header .container .chLanguage {
+    right: 230px !important;
+  }
+}
+@media (min-width:768px) {
+  .header .container .chLanguage {
+    right: 490px;
+  }
+}
+@media (min-width:992px) {
+  .header .container .chLanguage {
+    right: 260px;
+  }
+}
+.header .container .menu-bar {
+  right: auto !important;
+  left: 20px !important;
+  float: right;
+}
+.header .container .nav {
+  float: right;
+}
+@media (min-width:992px) {
+  .header .container .nav {
+    float: right;
+  }
+}
+.header .container .nav li {
+  float: right;
+}
+@media (max-width:767px) {
+  .header .container .nav li {
+    text-align: right !important;
+    margin-right: 25px !important;
+  }
+}
+
+.services .container .box {
+  float: right;
+}
+
+.ourPlayer .container .box {
+  float: right;
+}
+
+.Lorem .imgHolder img {
+  float: right;
+}
+@media (min-width:992px) {
+  .Lorem .imgHolder img {
+    float: right;
+  }
+}
+
+.footer .box {
+  float: right;
+}
+@media (min-width:1200px) {
+  .footer .box {
+    text-align: right;
+  }
+}

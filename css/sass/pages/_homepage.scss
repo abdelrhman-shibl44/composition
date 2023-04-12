@@ -1,0 +1,195 @@
+
+.slider{
+    text-align: center;
+    blockquote{
+        font: {
+            size: 18px;
+            weight:600;
+            style:italic;
+        }
+        line-height: 1.7;
+        padding:0 100px;
+        color:#777;
+        width:100%;
+        margin:40px auto ;
+        @media #{$maxMobile} {
+            padding: 0 0px;
+        }
+    }
+    .img{
+        width: 100%;
+        height: 400px;
+        margin:auto;
+        overflow: hidden;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    ul {
+        padding-top: 20px;
+        li{
+            width:15px;
+            height: 15px;
+            background-color: $greyColor;
+            display: inline-block;
+            border-radius: 50%;
+            &.active,
+            &:hover{
+                border: 3px solid;
+                background-color: #fff;
+            }
+            cursor: pointer;
+        };
+    }
+}
+    // start making the services section 
+    .services{ 
+        margin-bottom: 50px;
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+        .container{
+            .box{
+                .heading{
+                    display:flex;
+                    align-items: center;
+                    gap:25px;
+                    i{
+                        font-size:30px ;
+                    }
+                    @media #{$maxMobile} {
+                        justify-content: center;
+                    }
+                }
+                // width: 33.333%;
+                float: left;
+                @media #{$maxMobile} {
+                    width:calc(100% / 1);
+                    margin: 30px auto;
+                    text-align: center;
+                }
+                @media #{$minMobile} {
+                    width:calc(100% / 2);
+                    margin: 30px auto;
+                }
+                @media #{$minLarge} {
+                    width:calc(100% / 3);
+                    margin: 0px auto;
+                }
+                h3{
+                    color:#888;
+                    margin: 0;
+                }
+                p{
+                    color:$greyColor;
+                    line-height: 1.6;
+                    margin-bottom: 6px;
+                    padding: 0 15px 0px 0;
+                }
+                a{
+                    text-decoration: none;
+                    color:$mainColor;
+                }
+            }
+        }
+    }
+// start making the player section 
+.ourPlayer{
+    overflow: hidden;
+    margin-bottom: 50px;
+    .container{
+        .box{
+            img{
+                max-width: 100%;
+                height: 300px;
+            }
+            float: left;
+            width:calc(100% / 5);
+            @media #{$maxMobile} {
+                width:calc(100% / 1);
+                text-align: center;
+                margin-bottom: 20px;;
+            }
+            @media #{$minMobile} {
+                width:calc(100% / 2);
+                text-align: center;
+                margin-bottom: 20px;;
+            }
+            @media #{$minMedium} {
+                width:calc(100% / 3);
+                text-align: center;
+                margin-bottom: 20px;;
+            }
+            @media #{$minLarge} {
+                width:calc(100% / 5);
+                text-align: center;
+                margin-bottom: 20px;;
+            }
+            .heading{
+                h3{
+                    color:#888
+                }
+                h3 span{
+                    font-weight: normal;
+                    color:#ababab
+                }
+            }
+            p{
+                color:$greyColor;
+                line-height: 1.7;
+                margin-bottom:6px
+            }
+            a{
+                text-decoration: none;
+                color:$mainColor;
+            }   
+        }
+    }
+}
+// start making the lorem ipsum section 
+.Lorem{
+    overflow: hidden;
+    margin:50px 0;
+    .imgHolder{
+        margin-top:50px;
+        img{
+            float:left;
+            width:calc((94% / 3));
+            height: 250px;
+            &:nth-child(2){
+                margin: 0 3%;
+            }
+            @media #{$maxMobile} {
+                width:calc(100% / 1);
+                &:nth-child(2){
+                margin: 20px 0%;
+            }
+        }
+            @media #{$minMobile} {
+                float: none;
+                width:calc(92% / 2);
+                &:nth-child(2){
+                    margin:0 0% 20px 0%;
+                }
+                &{
+                    margin:0 20px 20px
+                }
+            }
+            @media #{$minMedium} {
+                float: left;
+                width:calc(94% / 3);
+                &:nth-child(2){
+                    margin: 0px 3%;
+                }
+                &{
+                    margin:0
+                }
+            } 
+        }
+        @media #{$minMobile} {
+            text-align: center;
+        }
+    }              
+}

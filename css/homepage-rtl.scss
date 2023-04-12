@@ -1,0 +1,92 @@
+@import 'sass/helpers/variables';
+$float-left:right;
+$float-right:left;
+
+$text-left:right;
+.header{
+    .container{
+        .logo{
+            float: $float-left;
+            @media #{$minMedium}{
+            float:$float-left;
+            text-align: $text-left;
+        }
+    }
+    .chLanguage{
+        position: absolute;
+        top: 70px;
+        left: 280px;
+        cursor: pointer;
+        font: {
+            size: 20px;
+        };
+        color:$mainColor;
+        user-select: none;
+        @media #{$maxMobile}{
+            right:230px !important
+        }
+        @media #{$minMobile}{
+            right:490px
+        }
+        @media #{$minMedium}{
+            right:260px
+        }
+    }
+
+    .menu-bar{
+        right: auto !important;
+        left: 20px !important;
+        float: $float-left;
+    }
+    .nav{
+        float: $float-left;
+        
+        @media #{$minMedium}{
+            float:$float-left;
+        }
+        li{
+            float:$float-left;
+            @media #{$maxMobile}{
+                text-align: $text-left !important;
+                margin-right: 25px !important;
+            }
+        }
+        
+    }
+}
+}
+    // start making the services section 
+    .services{ 
+        .container{
+            .box{
+                float: $float-left;
+            }
+        }
+    }
+// start making the player section 
+.ourPlayer{
+    .container{
+        .box{
+            float: $float-left;  
+        }
+    }
+}
+// start making the lorem ipsum section 
+.Lorem{
+    .imgHolder{
+        img{
+            float:$float-left;
+            @media #{$minMedium} {
+                float: $float-left;
+            } 
+        }
+    }              
+}
+.footer{
+    .box{
+        float: $float-left;
+        @media #{$minLarge} {
+            text-align: right;
+        }
+}
+}

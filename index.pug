@@ -1,0 +1,140 @@
+doctype html
+html(lang="en" dir="ltr")
+  head|
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='Some description')
+    meta(name='viewport', content='width=device-width')
+    title website with sass;
+    link(rel = "stylesheet" href = "./css/normalize.css")
+    link(rel = "stylesheet" href = "./css/main.css")
+    link(rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
+  body
+    header.header
+      .container
+        .logo
+          h1 Composition
+          p free PSD website template
+        .chLanguage Ar
+        .menu-bar  
+          <i class="fa-solid fa-bars"></i>  
+        nav.nav
+          ul
+            li: a(href="#") HomePage
+            li: a(href="#") StyleDemo
+            li: a(href="#") Full Width
+            li: a(href="#") DropDown
+            li: a(href="#") LinkText
+    section.slider
+      .container
+        blockquote "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis repellendus aliquid repellat maxime temporibus hic ab quis provident."
+        .img: img(src ="images/office3.jpg" alt="photo")
+        ul.bullets
+          li.active
+          li
+          li
+          li
+          li
+    section.services
+      .container
+        div.head-with-border
+          h2 Our Services
+        .box
+          .heading
+            <i class="fa-solid fa-earth-africa earth"></i>
+            h3 Indonectetus facilis 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sint officia, amet possimus nesciunt eaque asperiores iste fugit? Nostrum quod quasi consectetur.
+          a(href = "#") ViewProfile >>  
+        .box
+          .heading
+            <i class="fa-solid fa-users"></i>
+              h3 Indonectetus facilis
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sint officia, amet possimus nesciunt eaque asperiores iste fugit? Nostrum quod quasi consectetur.
+          a(href = "#") ViewProfile >>  
+        .box
+          .heading
+            <i class="fa-solid fa-gears"></i>
+            h3 Indonectetus facilis
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sint officia, amet possimus nesciunt eaque asperiores iste fugit? Nostrum quod quasi consectetur.
+          a(href = "#") ViewProfile >>  
+    section.ourPlayer
+      .container
+        div.head-with-border
+          h2 ourPlayer
+        .box
+          img(src ="images/person1.jpg" alt="photo")
+          .heading
+            h3 Name: <span>john</span>
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis repellendus.
+          a(href = "#") ViewProfile >>  
+        .box
+          img(src ="images/person2.jpg" alt="photo")
+          .heading
+            h3 Name: <span>john</span>
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis repellendus.
+          a(href = "#") ViewProfile >>  
+        .box
+          img(src ="images/person5.jpg" alt="photo")
+          .heading
+            h3 Name: <span>john</span>
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis repellendus.
+          a(href = "#") ViewProfile >>  
+        .box
+          img(src ="images/person3.jpg" alt="photo")
+          .heading
+            h3 Name: <span>john</span>
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis repellendus.
+          a(href = "#") ViewProfile >>  
+        .box
+          img(src ="images/person4.jpg" alt="photo")
+          .heading
+            h3 Name: <span>john</span>
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis repellendus.
+          a(href = "#") ViewProfile >>  
+    section.Lorem
+      .container
+        .head-with-border: h2 lorem ipsum
+        .imgHolder
+          img(src ="images/lorem/analysis.jpg" alt="photo")
+          img(src ="images/lorem/clock.jpg" alt="photo")
+          img(src ="images/lorem/office.jpg" alt="photo")
+    footer.footer
+      .container
+        .boxHolder
+          .box
+            h3 latest from the blog 
+            .holder 
+              img(src="images/lorem/office.jpg" alt= "photo")
+              .info
+                h4 Matuervestas mus lacinia
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non beatae, tempora repudiandae nihil debitis. Dicta impedit maxime ipsum.
+            .holder 
+              img(src="images/lorem/analysis.jpg" alt= "photo")
+              .info
+                h4 Matuervestas mus lacinia
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non beatae, tempora repudiandae nihil debitis. Dicta impedit maxime ipsum.
+          .box
+            h3 Company Details
+            ul
+              li Company Name 
+              li  Street Name & Number
+              li  Town
+              li  Postcode/Zip 
+              li Tel:xxxx xxxxxxxxxxx
+              li Fax:xxxxx xxxxxxxxxx
+              li  Email:<span>contact@mydomain.com</span>
+            .hours
+              h4 office Hours 
+              span Monday-Friday:oB:oo.17:30 
+              span Saturday:oB:oo 13:oo  
+          .box
+            form 
+              h3 contact us
+              input(type= "text" placeholder = "Name") 
+              input(type= "email" placeholder = "Email") 
+              textarea(placeholder = "Message" cols= "45" rows= "5")
+              input(type= "submit")
+        .copyRight
+          span copyright @ 2013- All Rights Reserved-Domain Name
+          span template by Os Template
+    script(src="./js/main.js")
